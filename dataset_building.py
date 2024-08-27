@@ -87,6 +87,6 @@ if __name__ == '__main__':
     combined_data, data_dict = combine_paragraph_by_title(dataset['train'], max_context_limit)
     result_data = get_answer_index_full_paragraph(combined_data)
 
-    with open("processed_squad2.json", "w") as outfile:
+    with open("processed_squad.json", "w") as outfile:
         json_string = json.dumps(result_data, indent=4)
         outfile.write(json_string)
